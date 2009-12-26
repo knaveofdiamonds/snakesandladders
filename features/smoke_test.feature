@@ -11,9 +11,9 @@ Feature: Smoke test: combination of moves
       | snake  | 15   | 11 |
       | ladder | 1    | 7  |
       | ladder | 14   | 23 |
+      And the game has 3 players
   
   Scenario: Playing a game
-    When I start a game with 3 players
     And player 1 rolls 1
     And player 2 rolls 6
     And player 2 rolls 6

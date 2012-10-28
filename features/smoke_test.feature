@@ -1,3 +1,4 @@
+@wip
 Feature: Smoke test: combination of moves
   In order to play a full game
   As a player

@@ -1,3 +1,4 @@
+@wip
 Feature: Win condition
   In order to win the game
   As a player 

@@ -1,3 +1,4 @@
+@wip
 Feature: Movement
   In order to move around the board
   As a player 
@@ -9,7 +10,7 @@ Feature: Movement
       | snake  | 3    | 2  |
       | ladder | 5    | 10 |
     And I start a game with 2 players
-
+  
   Scenario: Starting a game
     And player 1 rolls 1
     Then player 1 is now on position 1

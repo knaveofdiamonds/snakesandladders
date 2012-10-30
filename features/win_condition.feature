@@ -9,12 +9,14 @@ Feature: Win condition
       | snake  | 3    | 2  |
       | ladder | 5    | 10 |
     And I start a game with 2 players
-
+  
+  @wip
   Scenario: Win the game
     Given player 1 is on position 97
     And player 1 rolls 3
     Then player 1 has won the game
-
+  
+  @wip
   Scenario: Bounce back
     Given player 1 is on position 98
     And player 1 rolls 3

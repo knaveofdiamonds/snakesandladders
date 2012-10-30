@@ -10,27 +10,32 @@ Feature: Movement
       | ladder | 5    | 10 |
     And I start a game with 2 players
 
+  @wip
   Scenario: Starting a game
     And player 1 rolls 1
     Then player 1 is now on position 1
-    
+
+  @wip
   Scenario: Basic movement
     Given player 1 is on position 50
     When player 1 rolls 3
     Then player 1 is now on position 53
     And it is now player 2's go
-
+  
+  @wip
   Scenario: Roll a six, take another go
     Given player 1 is on position 50
     When player 1 rolls 6
     Then player 1 is now on position 56
     And it is now player 1's go
-
+  
+  @wip
   Scenario: Going up ladders
     Given player 1 is on position 2
     When player 1 rolls 3
     Then player 1 is now on position 10
-
+  
+  @wip
   Scenario: Going down snakes
     Given player 1 is on position 2
     When player 1 rolls 1

@@ -3,13 +3,14 @@ Feature: Movement
   As a player 
   I want to roll dice and move up and down the board
 
-  Background:
+  Background: "A board"
     Given a board with:
       | type   | from | to |
       | snake  | 3    | 2  |
       | ladder | 5    | 10 |
     And I start a game with 2 players
 
+  @implemented
   Scenario: Starting a game
     And player 1 rolls 1
     Then player 1 is now on position 1

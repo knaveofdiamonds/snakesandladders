@@ -14,7 +14,8 @@ Feature: Movement
   Scenario: Starting a game
     And player 1 rolls 1
     Then player 1 is now on position 1
-    
+  
+  @implemented
   Scenario: Basic movement
     Given player 1 is on position 50
     When player 1 rolls 3

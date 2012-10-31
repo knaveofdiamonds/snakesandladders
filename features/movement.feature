@@ -29,11 +29,13 @@ Feature: Movement
     Then player 1 is now on position 56
     And it is now player 1's go
 
+  @implemented
   Scenario: Going up ladders
     Given player 1 is on position 2
     When player 1 rolls 3
     Then player 1 is now on position 10
 
+  @implemented
   Scenario: Going down snakes
     Given player 1 is on position 2
     When player 1 rolls 1

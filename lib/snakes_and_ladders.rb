@@ -1,4 +1,7 @@
 def board(size, tunnels)
+  bounces = (1..6).inject({}) {|hsh, i| hsh[size + i] = size - i ; hsh }
+  tunnels = tunnels.merge(bounces)
+
   lambda {|i| tunnels[i] || i }
 end
 
@@ -9,4 +12,8 @@ end
 
 def next_player(player, roll)
   roll == 6 ? player : player + 1
+end
+
+def winner(size, positions)
+  positions.index(size)
 end

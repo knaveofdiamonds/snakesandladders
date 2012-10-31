@@ -27,3 +27,7 @@ end
 Then /^it is now player (\d+)\'s go$/ do |player|
   @next_player.should == player.to_i - 1
 end
+
+Then /^player (\d+) has won the game$/ do |player|
+  winner(100, @new_positions).should == player.to_i - 1
+end

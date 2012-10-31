@@ -10,11 +10,13 @@ Feature: Win condition
       | ladder | 5    | 10 |
     And I start a game with 2 players
 
+  @implemented
   Scenario: Win the game
     Given player 1 is on position 97
     And player 1 rolls 3
     Then player 1 has won the game
 
+  @implemented
   Scenario: Bounce back
     Given player 1 is on position 98
     And player 1 rolls 3

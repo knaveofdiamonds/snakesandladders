@@ -22,6 +22,7 @@ Feature: Movement
     Then player 1 is now on position 53
     And it is now player 2's go
 
+  @implemented
   Scenario: Roll a six, take another go
     Given player 1 is on position 50
     When player 1 rolls 6

@@ -16,7 +16,3 @@ end
 def winner(size, positions)
   positions.index(size)
 end
-
-def player(p)
-  p.to_i - 1
-end

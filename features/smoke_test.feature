@@ -15,13 +15,13 @@ Feature: Smoke test: combination of moves
   @implemented
   Scenario: Playing a game
     When I start a game with 3 players
-    And player 1 rolls 1
-    And player 2 rolls 6
-    And player 2 rolls 6
-    And player 2 rolls 3
-    And player 3 rolls 2
-    And player 1 rolls 3
-    And player 2 rolls 3
+    And a 1 is rolled
+    And a 6 is rolled
+    And a 6 is rolled
+    And a 3 is rolled
+    And a 2 is rolled
+    And a 3 is rolled
+    And a 3 is rolled
     Then player 1 is now on position 10
     And player 2 is now on position 23
     And player 3 is now on position 2

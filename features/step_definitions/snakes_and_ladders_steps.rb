@@ -7,6 +7,7 @@ end
 
 Given /^I start a game with (\d+) players$/ do |number_of_players|
   @players = [0] * number_of_players.to_i
+  @next_player = 0
 end
 
 Given /^player (\d+) rolls (\d+)$/ do |p, roll|
@@ -15,6 +16,11 @@ Given /^player (\d+) rolls (\d+)$/ do |p, roll|
                                       player(p), 
                                       roll.to_i)
 end
+
+When /^a (\d+) is rolled$/ do |roll|
+  step "player #{@next_player + 1} rolls #{roll}"
+end
+
 
 Then /^player (\d+) is now on position (\d+)$/ do |p, position|
   @new_positions[player(p)].should == position.to_i
